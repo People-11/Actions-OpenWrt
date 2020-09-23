@@ -15,3 +15,6 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 
 # OverClock
 git apply 1608.patch
+
+# Add OLED Support
+git apply i2c0.patch

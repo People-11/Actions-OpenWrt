@@ -18,3 +18,10 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 
 # Add SCUTClient
 git clone https://github.com/scutclient/scutclient package/scutclient
+
+# Add SmartDNS
+svn co https://github.com/pymumu/smartdns/trunk/package/openwrt package/new/smartdns
+git clone -b lede --single-branch https://github.com/pymumu/luci-app-smartdns package/new/luci-app-smartdns/
+
+# Add OLED
+git clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/new/luci-app-oled

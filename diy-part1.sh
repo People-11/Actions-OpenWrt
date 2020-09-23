@@ -25,3 +25,9 @@ git clone -b lede --single-branch https://github.com/pymumu/luci-app-smartdns pa
 
 # Add OLED
 git clone -b master --single-branch https://github.com/NateLol/luci-app-oled package/new/luci-app-oled
+
+# Add AutoCore
+svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/autocore package/lean/autocore
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/coremark package/lean/coremark
+mkdir package/lean/coremark/patches
+wget -P package/lean/coremark/patches/ https://raw.githubusercontent.com/QiuSimons/Others/master/coremark.patch

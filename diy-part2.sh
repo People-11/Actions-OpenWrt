@@ -14,10 +14,10 @@
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # OverClock
-git apply /openwrt/files/1608.patch
+#git apply /openwrt/files/1608.patch
 
 # Add OLED Support
-git apply /openwrt/files/i2c0.patch
+#git apply /openwrt/files/i2c0.patch
 
 # Add Autocore
-git apply /openwrt/files/autocore.diff
+#git apply /openwrt/files/autocore.diff
